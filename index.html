@@ -14,18 +14,26 @@
     <div id="container">
 
         <div id="img">
-            <img src="./img/undraw_biking_kc-4-f.svg"
-                alt="jovens-realizando-atividades-de-lazer-ao-ar-livre">
+            <img src="./img/undraw_biking_kc-4-f.svg" alt="jovens-realizando-atividades-de-lazer-ao-ar-livre">
         </div>
         <div>
-            <form>
+            <form id="form">
                 <h1>Calculadora - Imc</h1>
-                <label for="peso">Peso em Kg</label>
-                <input type="text" placeholder="Kg">
-                <label for="Altura">Altura</label>
-                <input type="text"  placeholder="Alt">
-                <button>Enviar</button>
+                <label for="peso">Peso em (Kg)</label>
+                <input type="text" placeholder="Kg" id="kg">
+                <label for="Altura">Altura (com Ponto)</label>
+                <input type="text" placeholder="Alt" id="alt">
+                <button onclick="CalcularImc()" type="button">Enviar</button>
+
+                <div id="textos-imc">
+                    <p class="textos" id="texto"></p>
+                    <p class="textos" id="texto1"></p>
+                </div>
+
+
             </form>
+
+
         </div>
 
 

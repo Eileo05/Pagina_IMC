@@ -20,7 +20,7 @@ body {
 }
 
 img {
-    height: 20em;
+    height: 23em;
 
 }
 
@@ -29,7 +29,7 @@ form{
     display: flex;
     text-align:left;
     flex-direction: column;
-    height: 20em;
+    height: 23em;
     width: 20em;
     
 }
@@ -66,4 +66,28 @@ form button{
 
 form button:hover{
    color: white;
+}
+ svg{
+    color: #b075d5;
+    /* margin-top: 10px; */
+ }
+
+.textos{
+    margin: 10px 0 0 15px;
+    color: white;
+}
+
+@media screen and (max-width: 768px)  {
+
+
+   #container img{
+    width: 100%;
+   }
+
+    #container{
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
 }
